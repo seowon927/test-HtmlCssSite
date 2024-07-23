@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: lightgray;
+}
+
+#content {
+    width: 1000px;
+    height: 850px;
+
+    margin: 20px auto;
+    padding: 10px;
+}
+
+#left_content {
+    width: 35%;
+    height: 830px;
+    background-color: white;
+    color: rgb(128, 127, 127);
+    float: left;
+
+    border-radius: 20px 0 0 20px;
+}
+
+#right_content {
+    width: 65%;
+    height: 830px;
+    background-color: rgb(128, 127, 127);
+    color: white;
+    float: left;
+
+    border-radius: 0 20px 20px 0;
+}
+
+
+header {
+    margin: 10px;
+    padding: 10px;
+}
+
+header img {
+    display: block; /* img태그는 인라인이라 block으로 바꿔줘야 중앙정렬 가능 */
+    width: 200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #256094;
+    font-family: "Hahmlet", serif;
+}
+
+header h1 a:hover {
+    color: #3c94e1;
+}
+
+header h5 {
+    font-family: "IBM Plex Sans KR", sans-serif;
+    color: rgb(73, 116, 152);
+    text-align: center;
+}
+
+div.r {
+    margin: 10px;
+    padding: 10px;
+
+    /* border-left: 1px solid darkgray; */
+
+    line-height: 1.6em;
+    letter-spacing: 0.05em;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.r h2 {
+    border-left: 10px solid darkgray;
+    margin: 5px 0 15px;
+    padding: 0 0 5px 10px;
+}
+
+#r0 p {
+    font-size: 85%;
+    text-align: justify;
+}
+
+#r1 p, #r3 p {
+    background-image: url(../images/img1.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+#r3 p {
+    background-image: url(../images/img2.png);
+}
+
+#r2 ul {
+    list-style-type: none;
+}
+
+#r4 p, #r5 p {
+    margin-bottom: 15px;
+}
+
+#pagetop {
+    position: fixed;
+
+    right: 30px;
+    bottom: 30px;
+}
